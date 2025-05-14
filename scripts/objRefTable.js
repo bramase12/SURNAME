@@ -16,6 +16,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.scrollto,
 		C3.Behaviors.Bullet,
 		C3.Behaviors.Pathfinding,
+		C3.Plugins.Browser,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.Audio.Acts.Play,
@@ -24,7 +25,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.ScriptsInEvents.Mainmenu_Event6_Act1,
+		C3.Plugins.Browser.Acts.Close,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.Sprite.Acts.Spawn,
@@ -143,6 +144,7 @@ self.C3_JsPropNameTable = [
 	{Death_Text: 0},
 	{Button_died: 0},
 	{qUIT_tEXT: 0},
+	{Browser: 0},
 	{Ground_1: 0},
 	{Hearts: 0},
 	{F3_DEBUG: 0},
@@ -213,5 +215,6 @@ self.InstanceType = {
 	Hunger_Text: class extends self.ITextInstance {},
 	Death_Text: class extends self.ITextInstance {},
 	Button_died: class extends self.ISpriteInstance {},
-	qUIT_tEXT: class extends self.ITextInstance {}
+	qUIT_tEXT: class extends self.ITextInstance {},
+	Browser: class extends self.IInstance {}
 }

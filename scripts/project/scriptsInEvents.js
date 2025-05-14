@@ -2,11 +2,6 @@
 
 const scriptsInEvents = {
 
-	async Mainmenu_Event6_Act1(runtime, localVars)
-	{
-		window.stop()
-	},
-
 	async Main_Event9_Act1(runtime, localVars)
 	{
 
